@@ -16,7 +16,7 @@ int main()
             for(i = n; i >= m; i--) {
                 printf("%d ", i);
             }
-        }
+        }   
     }
 
     return 0;
