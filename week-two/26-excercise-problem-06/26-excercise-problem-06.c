@@ -2,22 +2,23 @@
 
 int main()
 {
-    int n, m, i;
+    int start, end;
 
-    scanf("%d%d", &n, &m);
+    scanf("%d%d", &start, &end);
 
-    if(n > 0 && m > 0) {
-        if(n < m) {
-            for(i = n; i <= m; i++) {
-                printf("%d ", i);
-            }
+    while (start != end)
+    {
+        if(start > 12) {
+            start = start % 12;
         }
-        else {
-            for(i = n; i >= m; i--) {
-                printf("%d ", i);
-            }
-        }   
+        printf("%d ", start);
+        start += 1;
+
+        if(start == end) {
+            printf("%d ", start);
+        }
     }
+    
 
     return 0;
 }
